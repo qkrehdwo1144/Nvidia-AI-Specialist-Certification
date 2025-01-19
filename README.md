@@ -23,7 +23,7 @@ This project aims to develop an AI-based dog detection system capable of detecti
 
 ---
 
-### Video Acquisition
+### Training / Validation Video
 
 - Training Video
   - ( )
@@ -33,4 +33,7 @@ This project aims to develop an AI-based dog detection system capable of detecti
 ---
 
 ### Project Progress
+
+#### **1. DarkLabel (labels)**
+
 

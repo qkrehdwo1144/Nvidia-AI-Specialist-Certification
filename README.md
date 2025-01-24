@@ -26,9 +26,10 @@ This project aims to develop an AI-based dog detection system capable of detecti
 ### Training / Validation Video
 
 - Training Video
-  - ( )
+  - https://youtube.com/shorts/LJPIrkx2lIU?feature=share
 - Validation Video
-  - ( )
+  - https://youtube.com/shorts/zOVFVnOHGQY?feature=share
+  - https://youtube.com/shorts/jlphRU5ys0o?feature=share
 
 ---
 
@@ -171,3 +172,29 @@ This project aims to develop an AI-based dog detection system capable of detecti
 </p>
 
 - **Train batch**
+![train_batch0](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/22.jpg)
+
+![train_batch1](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/23.jpg)
+
+![train_batch2](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/24.jpg)
+</p>
+
+- **Val batch**
+![val_batch0](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/f5d1d33d2783bdca4bee5a7e14fbcf9cdca4ba67/26.jpg)
+
+![val_batch1](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/f5d1d33d2783bdca4bee5a7e14fbcf9cdca4ba67/28.jpg)
+
+![val_batch2](https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/f5d1d33d2783bdca4bee5a7e14fbcf9cdca4ba67/30.jpg)
+
+---
+### Detect
+<p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/f5d1d33d2783bdca4bee5a7e14fbcf9cdca4ba67/31.png">
+
+### Detection Videos
+- https://youtube.com/shorts/ZQ7_VF8yWbY?feature=share
+- https://youtube.com/shorts/YgOQgLsbTNY?feature=share
+
+### Jetson Nano
+- https://youtu.be/grOx4P17Ojk
+- https://youtu.be/Yz1OeZeelzw
+---

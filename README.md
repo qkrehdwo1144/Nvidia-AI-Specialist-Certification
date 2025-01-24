@@ -56,6 +56,118 @@ This project aims to develop an AI-based dog detection system capable of detecti
 - Check extracted labeling
 <p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/a78e1b6619fa402cc601ba53aefe888f05346cd2/8.png">
 
-#### **3. Training Data with YOLOv5 in Colab**
-- Link your Google Drive to Colab
-  
+#### **3. Upload and prepare files before model training**
+- Link your Google Drive to Colab + Clone and install the yolov5 repertoire
+
+<p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/9.png">
+
+- Download Yolov5n model
+
+<p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/10.png">
+
+- Upload files to yolov5 on google drive
+
+<p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/11.png">
+
+#### **4. Model Learning**
+---
+<p align="center"><img src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/12.png">
+
+<I set the epochs to 300, but the message "Stopping training early as no improvement observed in the last 100 epochs." appeared, and the training stopped.>
+
+- **`train.py`**
+    
+  The training script for YOLOv5. It is used to train the model.
+- **`-img 512`**
+    
+    Specifies the input image size.
+    
+    The training data is resized to 512x512 pixels before being fed into the model.
+    
+    Smaller sizes increase training speed but may reduce performance, while larger sizes require more computational resources.
+- **`-batch 16`**
+    
+    Sets the batch size.
+    
+    It determines the number of images input into the model at one time.
+    
+    Larger batch sizes can speed up training but require more memory.
+- **`-epochs 300`**
+    
+    Specifies the number of training iterations (epochs).
+    
+    The model will train on the entire dataset 300 times.
+    
+    A higher number of epochs increases training time but can improve model performance.
+- **`-data /content/drive/MyDrive/yolov5/data.yml`**
+    
+    Path to the dataset configuration file.
+    
+    The `data.yml` file contains:
+    
+    - Dataset paths (train/val images and labels)
+    - Number of classes
+    - Class names
+- **`-weights yolov5n.pt`**
+    
+    Specifies the pre-trained YOLOv5 model weights.
+    
+    `yolov5n.pt` refers to the Nano version of YOLOv5, which is lightweight and fast but may have relatively lower performance.
+    
+    Other options include: `yolov5s.pt`, `yolov5m.pt`, `yolov5l.pt`, `yolov5x.pt`.
+- **`-cache`**
+    
+    Caches the dataset into memory to speed up training.
+    
+    When enabled, it reduces I/O time (file reading/writing) during training.
+
+---
+
+### Results
+
+- **TensorBoard Visualization**
+<p align="center">
+    <img width="1021" alt="TensorBoard" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/13.png">
+</p>
+
+- **Confusion Matrix**
+<p align="center">
+    <img width="1021" alt="Confusion Matrix" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/14.png">
+</p>
+
+- **F1-Curve**
+<p align="center">
+    <img width="1021" alt="F1_curve" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/15.png">
+</p>
+
+- **labels_correlogram**
+  <p align="center">
+    <img width="1021" alt="labels_correlogram" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/16.jpg">
+</p>
+
+- **labels**
+  <p align="center">
+    <img width="1021" alt="labels" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/17.jpg">
+</p>
+
+- **P-Curve**
+<p align="center">
+     <img width="1021" alt="P-Curve" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/18.png">
+</p>
+
+- **PR-Curve**
+<p align="center">
+     <img width="1021" alt="P-Curve" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/19.png">
+</p>
+
+- **R-Curve**
+<p align="center">
+     <img width="1021" alt="P-Curve" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/20.png">
+</p>
+
+- **Result**
+<p align="center">
+     <img width="1021" alt="Result" src="https://github.com/qkrehdwo1144/Nvidia-AI-Specialist-Certification/blob/bf2e56e1e1907d527e3e51652d65b8dd80f06bbb/21.png">
+</p>
+
+- **Train batch**
